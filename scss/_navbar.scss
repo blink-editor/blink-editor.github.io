@@ -1,0 +1,79 @@
+// Styling for the navbar
+#mainNav {
+    border-color: fade-out($gray-darker, .95);
+    background-color: rgb(240, 240, 240);
+    @include transition-all;
+    @include heading-font;
+    .navbar-brand {
+        color: $theme-primary;
+        @include heading-font;
+        font-weight: bold;
+        &:hover,
+        &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+    .navbar-toggler {
+        font-size: 12px;
+        padding: 8px 10px;
+        color: $gray-darker;
+    }
+    .navbar-nav {
+        > li {
+            > a {
+                font-size: 11px;
+                @include alt-font;
+                &.active {
+                    color: $theme-primary !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+            > a,
+            > a:focus {
+                color: $gray-darker;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        border-color: transparent;
+        background-color: rgb(240, 240, 240);
+        .navbar-brand {
+            color: $theme-primary;
+            &:hover,
+            &:focus {
+                color: fade($theme-primary, 0.7);
+            }
+        }
+        .navbar-nav > li > a,
+        .navbar-nav > li > a:focus {
+            color: $theme-primary;
+            &:hover {
+                color: $theme-primary;
+            }
+        }
+        &.navbar-shrink {
+            border-color: fade-out($gray-darker, .9);
+            background-color: white;
+            .navbar-brand {
+                color: $gray-darker;
+                &:hover,
+                &:focus {
+                    color: fade($theme-primary, 0.7);
+                }
+            }
+            .navbar-nav > li > a,
+            .navbar-nav > li > a:focus {
+                color: $gray-darker;
+                &:hover {
+                    color:fade($theme-primary, 0.7);
+                }
+            }
+        }
+    }
+}
