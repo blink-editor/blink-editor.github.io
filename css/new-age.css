@@ -201,6 +201,7 @@ header.masthead .device-container .screen img {
 }
 
 section.download {
+  color: white;
   position: relative;
   padding: 150px 0;
 }
@@ -213,10 +214,12 @@ section.download h2 {
 section.download .badges .badge-link {
   display: block;
   margin-bottom: 25px;
+  margin-right: 25px;
 }
 
 section.download .badges .badge-link:last-child {
   margin-bottom: 0;
+  margin-right: 0;
 }
 
 section.download .badges .badge-link img {
@@ -234,6 +237,11 @@ section.download .badges .badge-link img {
   section.download h2 {
     font-size: 70px;
   }
+}
+
+.badge-link.btn:hover {
+  border-color: #212529;
+  background-color: #212529;
 }
 
 section.features .section-heading {
@@ -289,6 +297,37 @@ section.features .feature-item i, section.features .feature-item img {
   background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+section.features#features .device-container,
+section.features#features .feature-item {
+  max-width: 600px;
+}
+
+section.features#features .device-container, section.features#features .feature-item {
+  margin-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  section.features#features .device-container, section.features#features .feature-item {
+    margin-bottom: 100px;
+  }
+}
+
+section.features#team .device-container,
+section.features#team .feature-item {
+  max-width: 325px;
+  margin: 0 auto;
+}
+
+section.features#team .device-container {
+  margin-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  section.features#team .device-container {
+    margin-bottom: 0;
+  }
 }
 
 section.features#team .section-heading {

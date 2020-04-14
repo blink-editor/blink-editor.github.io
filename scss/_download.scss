@@ -1,5 +1,6 @@
 // Styling for the download section
 section.download {
+    color: white;
     position: relative;
     padding: 150px 0;
     h2 {
@@ -10,8 +11,10 @@ section.download {
         .badge-link {
             display: block;
             margin-bottom: 25px;
+            margin-right: 25px;
             &:last-child {
                 margin-bottom: 0;
+                margin-right: 0;
             }
             img {
                 height: 60px;
@@ -27,4 +30,9 @@ section.download {
             font-size: 70px;
         }
     }
+}
+
+.badge-link.btn:hover {
+    border-color: #212529;
+    background-color: #212529;
 }

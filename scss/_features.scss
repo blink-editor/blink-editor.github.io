@@ -46,7 +46,31 @@ section.features {
     }
 }
 
+section.features#features {
+    .device-container,
+    .feature-item {
+        max-width: 600px;
+    }
+    .device-container, .feature-item {
+        margin-bottom: 100px;
+        @media(min-width: 992px) {
+            margin-bottom: 100px;
+        }
+    }
+}
+
 section.features#team {
+    .device-container,
+    .feature-item {
+        max-width: 325px;
+        margin: 0 auto;
+    }
+    .device-container {
+        margin-bottom: 100px;
+        @media(min-width: 992px) {
+            margin-bottom: 0;
+        }
+    }
     .section-heading {
         margin-bottom: 50px;
     }
